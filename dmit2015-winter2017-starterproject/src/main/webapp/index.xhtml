@@ -17,10 +17,48 @@
 
 	<ui:define name="maincontent">
 		<h1>DMIT2015 - Enterprise Application Development</h1>
+		<h2>DMIT2015 Starter Project</h2>
+		<p>To use this project:</p>
+		<ol>
+			<li>Open Eclipse and import the GIT project from
+				<strong>https://github.com/swunait/dmit2015-winter2017-starterrepo.git</strong>
+			</li>
+			<li>Rename the project (<strong>Refactor | Rename</strong>) to <strong>dmit2015-projectname-yourname</strong>
+			</li>
+			<li>In Project Explorer view, open "JPA Context |<strong>persistence.xml</strong>" and change the
+				<strong>jta-data-source</strong> value to one of the following preconfigued wildfly datasources:
+				<table class="table table-condensed">
+					<thead>
+						<tr>
+							<th>jta-data-source</th>
+							<th>Database</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>java:jboss/datasources/ChinookDS</td>
+							<td>Chinook</td>
+						</tr>
+						<tr>
+							<td>java:jboss/datasources/northwindDS</td>
+							<td>Northwind</td>
+						</tr>
+						<tr>
+							<td>java:jboss/datasources/ClassicModelsDS</td>
+							<td>ClassicModels</td>
+						</tr>
+					</tbody>				
+				</table>
+			</li>
+			<li>Use the JSF Composition file "<strong>webapp | public | JSF-Composition-Page.xhtml</strong>"
+				as a template when creating a new JSF web page. 
+			</li>
+			<li>Customize the JSF template file "<strong>webapp | WEB-INF | templates | template-bootsfaces-starter.xhtml</strong>"
+				to include new links to pages you created. 
+			</li>
+			
+		</ol>
 		
-		<p>
-			Use this starter project as the starting point for all new projects.
-		</p>
 	</ui:define>
 
 </ui:composition>
